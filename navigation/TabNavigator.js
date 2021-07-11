@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import CreatePost from '../screens/CreatePost';
 import Feed from '../screens/Feed';
 
-const Tab=createBottomTabNavigator()
+const Tab=createMaterialBottomTabNavigator()
 
 const BottomTabNavigator=()=>{
   return(
