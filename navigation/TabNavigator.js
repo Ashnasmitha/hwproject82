@@ -1,8 +1,10 @@
 import * as React from 'react';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {RFValue} from 'react-native-responsive-fontsize';
 import CreatePost from '../screens/CreatePost';
 import Feed from '../screens/Feed';
+
 
 const Tab=createMaterialBottomTabNavigator()
 
@@ -37,3 +39,18 @@ const BottomTabNavigator=()=>{
 }
 
 export default BottomTabNavigator
+
+const styles = StyleSheet.create({
+  bottomTabStyle: {
+      backgroundColor: "#2a2a2a",
+      height: "8%",
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 30,
+      overflow: "hidden",
+      position: "absolute"
+  },
+  icons: {
+      width: RFValue(30),
+      height: RFValue(30)
+  }
+});
