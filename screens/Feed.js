@@ -78,6 +78,6 @@ const styles=StyleSheet.create({
     fontSize:RFValue(28)
   },
   cardContainer:{
-    flex:0.05
+    flex:0.85
   }
 })
